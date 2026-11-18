@@ -1,20 +1,18 @@
 #include <stdio.h>
-
 int main(){
-    int n , remainder, original, sum=0;
+    int n , original , rem , sum=0;
     printf("Enter a number: ");
-    scanf("%d", &n);
+    scanf("%d",&n);
     original = n;
     while(n>0){
-        remainder = n%10;
-        sum =sum+(remainder*remainder*remainder);
-        n = n/10;
-    }if (sum == original) {
-        printf("%d is an Armstrong number.\n", original);
-    } else {
-        printf("%d is not an Armstrong number.\n", original);
+        rem = n%10;
+        sum = sum +(rem*rem*rem);
+        n=n/10;
     }
-
-    return 0;
-
+    if(sum == original){
+        printf("%d is an Armstrong number\n",original);
+    }
+    else{
+        printf("%d is not an Armstrong number\n",original);
+    }
 }
