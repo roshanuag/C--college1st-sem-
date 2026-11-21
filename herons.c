@@ -20,10 +20,8 @@ int main() {
     else {
         calculations(a, b, c);
     }    
-
     return 0;
 }
-
 void calculations(double a, double b, double c) {
     double s, Area;
     s = (a + b + c) / 2.0;
