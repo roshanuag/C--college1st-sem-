@@ -14,7 +14,7 @@ int main() {
     gross = basic + hra + da + ta;
     net = gross - pf;
 
-    printf("\n--- Salary Details ---\n");
+    printf("\n---- Salary Details ----\n");
     printf("Basic Salary : %.2f\n", basic);
     printf("HRA          : %.2f\n", hra);
     printf("DA           : %.2f\n", da);
